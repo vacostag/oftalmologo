@@ -1,0 +1,51 @@
+@gold: 		#d5c89c;
+@purple: 	#6f205e;
+@white:		#ffffff;
+
+.radius-left(@radius:5px){
+	-webkit-border-top-left-radius: @radius;
+	   -moz-border-top-left-radius: @radius;
+	        border-top-left-radius: @radius;
+}
+.radius-right(@radius:5px){
+	-webkit-border-top-right-radius: @radius;
+	   -moz-border-top-right-radius: @radius;
+	        border-top-right-radius: @radius;
+}
+
+html, body{margin:0; padding:0}
+.wrapper{margin:auto;}
+.wrapper, header, nav, #hero-shoot{width:960px;}
+header{height:100px;overflow:hidden;}
+
+nav{background:url('../assets/deg-menu-botonera.jpg')}
+nav{height:37px;border-top:5px solid @gold;padding-top:8px}
+ul, li{margin:0;padding:0}
+.social-networks{float:right; position:relative;top:-100px;}
+.logo{width:290px}
+nav ul{margin-left:185px;}
+nav ul li{float:left;list-style:none;padding:5px 20px;font-size:20px;line-height:20px; border-right:1px solid  @gold;color: @gold;}
+nav ul li:last-child{border-right:0}
+.social-networks ul li{float:left;list-style:none;margin-right:5px;}
+.social-networks, .social-networks ul{height:27px}
+
+#hero-shoot{height:410px;}
+#procedures{height:120px;border-top: 5px solid @gold;border-bottom: 5px solid @gold}
+#procedures ul li{float:left;width:160px;list-style:none;color:@gold;text-align:center}
+.p-title{background:@purple}
+
+#information{width:670px;margin:10px 17px;float:left;}
+#information p{margin:0}
+.information-title{background:@purple;color:@white;text-align:center;height:35px;line-height:35px;}
+div[class*="bar-"]{width:670px;}
+div[class*="bar-"] .left{float:left;width:335px;}
+.left .information-title{.radius-left(20px)}
+div[class*="bar-"] .right{float:right;width:335px;}
+.right .information-title{.radius-right(20px)}
+
+aside{float:right;width:240px;margin-right:16px;margin-top:10px}
+
+footer p{margin:0;padding:0}
+.belongs-to{padding:20px 0}
+.footer-text{text-align:center;font-size:10px;width: 700px;margin: auto;border-top: 5px solid @gold;padding: 20px;}
+.clearfix{clear:both;}
